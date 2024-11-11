@@ -664,6 +664,7 @@ div.content7{
             justify-content: center;
             align-items: start;
             padding-right: 75px;
+            padding-left: 75px;
         }
     }
 @media (max-width: 991px) {
@@ -714,7 +715,7 @@ div.content7{
         font-size: .8rem;
     }
     .side-items{
-        padding-left: 20px;
+        padding-left:75px;
     }
     .side-items h2,.side-items-home h2{
         font-size: 1rem;
@@ -836,6 +837,7 @@ div.content7{
     }
     .side-items{
         padding-left: 0;
+        margin-left: 35px;
     }
     .side-items h2,.side-items-home h2{
         font-size: .7rem;

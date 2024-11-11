@@ -69,5 +69,34 @@ document.addEventListener('scroll', function() {
     //   card2.style.transform = "translateY(100px)";
     // }
   });
+
+
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    console.log(name,email,message);
+    
+    db.collection('contacts').add({
+      name: name,
+      email: email,
+      message: message,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(() => {
+      alert("Message sent successfully!");
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    })
+    .catch((error) => {
+      console.error("Error adding document: ", error);
+      alert("Error sending message. Please try again later.");
+    });
+  });
   
   
