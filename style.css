@@ -308,7 +308,7 @@
 .content6{
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     display: flex;
 }
 .content6 h2{
@@ -357,7 +357,22 @@ div.content7{
     justify-content: center;
     padding-right: 75px;
 }
-.side-items h2{
+
+.side-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 75px;
+}
+.side-items-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 75px;
+}
+
+.side-items h2,.side-items-home h2{
     font-size: 1.25rem;
     margin-bottom: 15px;
     color: white;
@@ -496,6 +511,7 @@ div.content7{
      transition: opacity 0.5s ease, transform 0.5s ease-in-out;
      max-width: 100%;
  }
+
  .tab-container2-dum{
     max-width: 100%;
      background-color: #fecb04;
@@ -538,17 +554,118 @@ div.content7{
      transition: opacity 0.5s ease, transform 0.5s ease;
     
  }
+ .tab-container1-home {
+    background-color: #f68b1e;
+     margin-left: 40px;
+     margin-right: 40px;
+     padding: 20px;
+     border-radius: 32px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 25px;
+     position: relative;
+     z-index: 0;
+     transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+     max-width: 100%;
+}
+
+.tab-container2-home {
+    max-width: 100%;
+     background-color: #fecb04;
+     margin-left: 40px;
+     margin-right: 40px;
+     margin-top: -150px;
+     padding: 20px;
+     border-radius:32px;
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     opacity: 0;
+     z-index: 2;
+     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
  .highlighted-and {
     font-size: 2rem;
 }
 
-@media (max-width: 917px) {
-    .main {
-        background: url(asset/home_background.jpg) no-repeat right top;
-        background-size: contain; 
+.color-text{
+    color: #e1820e;
+}
+.white-text{
+    color: white;
+}
+.title h2 {
+    margin: 0;
+    font-size: 4.5rem;
+    font-family: 'MyFont',sans-serif;
+}
+
+#animatedTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-line {
+    margin: 0;
+    font-size: 4.5rem;
+    font-family: 'MyFont',sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease forwards;
+    color: white;
+    padding: 0;
+}
+.animated-line h2{
+    margin: 0;
+}
+
+/* Add delays to each line */
+.animated-line:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.animated-line:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.animated-line:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.animated-line:nth-child(4) {
+    animation-delay: 2s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
+
+
+    @media (max-width: 917px) {
+        .main {
+            background: url(asset/home_background.jpg) no-repeat right top;
+            background-size: contain; 
+        }
+    }
+    @media (max-width: 914px) {
+        .side-items-home{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding-right: 75px;
+        }
+    }
 @media (max-width: 991px) {
     .nav-container{
         display: flex;
@@ -599,7 +716,7 @@ div.content7{
     .side-items{
         padding-left: 20px;
     }
-    .side-items h2{
+    .side-items h2,.side-items-home h2{
         font-size: 1rem;
     }
 
@@ -655,7 +772,7 @@ div.content7{
     }
 
     .item h2 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .sub-subheading {
         width: 90%;
@@ -665,6 +782,7 @@ div.content7{
     }
     
 }
+
 
 @media(max-width: 597px){
     .text-motiv h2{
@@ -705,7 +823,7 @@ div.content7{
     }
 
     .item h2 {
-        font-size: .9rem;
+        font-size: 1.7rem;
     }
     .subheading{
         justify-content: start;
@@ -719,7 +837,7 @@ div.content7{
     .side-items{
         padding-left: 0;
     }
-    .side-items h2{
+    .side-items h2,.side-items-home h2{
         font-size: .7rem;
     }
     .main-heading img {
@@ -736,13 +854,17 @@ div.content7{
     }
     .content4 p{
         width: 100%;
-        font-size: .6rem
+        font-size: .8rem
         ;
     }
     .container-div {
-        background-image: url(asset/bulb2.png);
-        background-size: cover;
+        background-image: url('asset/bulb20.png');
+        background-repeat: no-repeat;
+        background-position: left center; /* Positions image to the right edge */
+        background-size: cover; /* Adjusts the size of the image */
     }
+    
+    
     .rest-text-sub {
         color: white;
         font-size: .6rem;

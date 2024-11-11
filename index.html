@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 </head>
 <body style="background-color: #2F1B52;">
     <div class="main">
@@ -37,13 +38,12 @@
             </div>
         </nav>
         <div class="content">
-                <div class="title">
-                    <h2 class="white-text">
-                        <div class="title">
-                            <div id="animatedTextContainer" class="white-text"></div>
-                          </div>                          
-                    </h2>
-                  </div>                  
+                <div class="title" id="animatedTextContainer">
+                    <div class="animated-line"><h2>WE LOVE</h2></div>
+                    <div class="animated-line"><h2>ELEVATING YOUR</h2></div>
+                    <div class="animated-line"><h2>BRAND THROUGH</h2></div>
+                    <div class="animated-line" style="color: #ffa500;"><h2>INNOVATIVE IDEAS</h2></div>
+                </div>                  
         </div>
         <div class="subTitle"> 
             <img src="asset/home/Arrow.png" alt="arrow" class="arrow">
@@ -120,7 +120,7 @@
             font-weight: 400; gap: 20px;"><img src="asset/home/Arrow.png" alt="arrow">WHAT WE DO?</div>
             </div>
 
-            <div class="tab-container1" style="position: relative;">
+            <div class="tab-container1-home" style="position: relative;">
                 <div class="set-container">
                     <div class="main-heading">
                         <div class="plus-img">
@@ -137,18 +137,134 @@
                         </p>
                     </div>
                 </div> 
-                <div class="side-items">
-                    <h2>BRANDING</h2>
-                    <h2>PACKAGING</h2>
-                    <h2>PUBLICATIONS</h2>
-                    <h2>BROCHURES</h2>
-                    <h2>INFOGRAPHICS</h2>
-                    <h2>EVENTGRAPHICS</h2>
-                    <h2>RESEARCH REPORT</h2>
+                <div class="side-items-home">
+                    <h2>BRANDING  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>PACKAGING  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>PUBLICATIONS  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>BROCHURES  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>INFOGRAPHICS  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>EVENTGRAPHICS  <i class="fa-solid fa-plus"></i></h2>
+                    <h2>RESEARCH REPORT  <i class="fa-solid fa-plus"></i></h2>
                 </div>
             </div>
+            <div class="tab-container2-home">
+                <div class="main-heading">
+                    <div class="plus-img">
+                        <img src="asset/home/plus.png" alt="plus" class="plus-icon">
+                    </div>
+                    <div class="heading-text">
+                      <h2>WEBSITE &</h2>
+                      <h2>DIGITAL</h2>
+                      <h2>ENGAGEMENT</h2>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="sub-image1">
+                        <img src="asset/computer.png" alt="">
+                    </div>
+                    <div class="sub-image2">
+                        <img src="asset/phone.png" alt="">
+                    </div>
+                </div>
+                <div class="sub-class">
+                    <div class="sub-main-heading">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="sub-heading-text">
+                          <h2>WEBSITE DEVELOPMENT</h2>
+                        </div>
+                    </div>
+                    <div class="sub-subheading">
+                        <p class="sub-sub-heading">
+                            Whether you're a startup, small business or enterprise, our website development services are tailored to your unique needs, goals and brand identity. With a focus on creativity, user experience, and cutting-edge technology, we'll help you build a website that not only looks great but also drives results and enhances your online presence.
+                        </p>
+                    </div>
+                </div>
+                <div class="sub-class">
+                    <div class="sub-main-heading">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="sub-heading-text">
+                          <h2>MOBILE APP</h2>
+                        </div>
+                    </div>
+                    <div class="sub-subheading">
+                        <p class="sub-sub-heading">
+                            With a focus on creativity, user experience, and cutting-edge technology, we'll help your app idea to life and stand out in the competitive app marketplace. Depending on your specific needs and budget, we'll recommend the most appropriate development approach for your app:native, cross-platform, or hybrid. Whether it's iOS, Android, both, we have the expertise to develop high-quality mobile apps that perform seamlessly on the platform(s) of your choice.
+                        </p>
+                    </div>
+                </div>
+                <div class="sub-class">
+                    <div class="sub-main-heading">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="sub-heading-text">
+                          <h2>DIGITAL MARKETING</h2>
+                        </div>
+                    </div>
+                    <div class="sub-subheading">
+                        <p class="sub-sub-heading">
+                            Our digital marketing services are designed to help you connect with your target audience, increase brand visibility, drive website traffic, and ultimately, achieve your business goals. With a strategic approach, creative execution, and data-driven insights, we'll help you navigate the ever-evolving digital landscape and unlock new opportunities for growth.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="tab-container2-dum" style="opacity: 0;">
+            <div class="main-heading">
+                <div class="plus-img">
+                    <img src="asset/home/plus.png" alt="plus" class="plus-icon">
+                </div>
+                <div class="heading-text">
+                  <h2>WEBSITE &</h2>
+                  
+                </div>
+            </div>
+            <div class="image-container" style="opacity: 0;">
+                <div class="sub-image1">
+                    <img src="asset/computer.png" alt="">
+                </div>
+                <div class="sub-image2">
+                    <img src="asset/phone.png" alt="">
+                </div>
+            </div>
+            <div class="sub-class">
+                <div class="sub-main-heading">
+                    <i class="fa-solid fa-xmark"></i>
+                    <div class="sub-heading-text">
+                      <h2>WEBSITE DEVELOPMENT</h2>
+                    </div>
+                </div>
+                <div class="sub-subheading-dum">
+                    <p class="sub-sub-heading">
+                        Whether you're a startup, small business or enterprise, our website development services are tailored to your unique needs, goals and brand identity. With a focus on creativity, user experience, and cutting-edge technology, we'll help you build a website that not only looks great but also drives results and enhances your online presence.
+                    </p>
+                </div>
+            </div>
+            <div class="sub-class">
+                <div class="sub-main-heading">
+                    <i class="fa-solid fa-xmark"></i>
+                    <div class="sub-heading-text">
+                      <h2>MOBILE APP</h2>
+                    </div>
+                </div>
+                <div class="sub-subheading">
+                    <p class="sub-sub-heading">
+                        With a focus on creativity, user experience, and cutting-edge technology, we'll help your app idea to life and stand out in the competitive app marketplace. Depending on your specific needs and budget, we'll recommend the most appropriate development approach for your app:native, cross-platform, or hybrid. Whether it's iOS, Android, both, we have the expertise to develop high-quality mobile apps that perform seamlessly on the platform(s) of your choice.
+                    </p>
+                </div>
+            </div>
+            <div class="sub-class">
+                <div class="sub-main-heading">
+                    <i class="fa-solid fa-xmark"></i>
+                    <div class="sub-heading-text">
+                      <h2>DIGITAL MARKETING</h2>
+                    </div>
+                </div>
+                <div class="sub-subheading">
+                    <p class="sub-sub-heading">
+                        Our digital marketing services are designed to help you connect with your target audience, increase brand visibility, drive website traffic, and ultimately, achieve your business goals. With a strategic approach, creative execution, and data-driven insights, we'll help you navigate the ever-evolving digital landscape and unlock new opportunities for growth.
+                    </p>
+                </div>
+            </div>
+            </div>
             
-            <div style="padding: 40px;"></div>
         </div>  
     </div>
     <footer class="footer pt-5 pb-4">

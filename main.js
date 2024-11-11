@@ -1,23 +1,51 @@
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   var options = {
+//       strings: [
+//           "<span class='animated-line'>WE LOVE</span><br>" +
+//           "<span class='animated-line'>ELEVATING YOUR</span><br>" +
+//           "<span class='animated-line'>BRAND THROUGH</span><br>" +
+//           "<span class='animated-line color-text'>INNOVATIVE IDEAS</span>"
+//       ],
+//       typeSpeed: 25,
+//       backSpeed: 100,
+//       startDelay: 100,
+//       fadeOut: false,
+//       fadeOutClass: "typed-fade-out",
+//       showCursor: false,
+//       onComplete: function () {
+//           document.querySelector(".subTitle").style.opacity = 1;
+//       },
+//   };
+
+//   var typed = new Typed("#animatedTextContainer", options);
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-    var options = {
-      strings: [
-        "WE LOVE<br>ELEVATING YOUR<br>BRAND THROUGH<br><span class='color-text'>INNOVATIVE IDEAS</span>",
-      ],
-      typeSpeed: 25,
-      backSpeed: 100,
-      startDelay: 100,
-      fadeOut: false,
-      fadeOutClass: "typed-fade-out",
-      showCursor: false,
-      onComplete: function () {
-        document.querySelector(".subTitle").style.opacity = 1;
-      },
-    };
+  setTimeout(function () {
+      document.querySelector(".subTitle").style.opacity = 1;
+  }, 2500); // Adjust this delay to match the total animation time of your lines
+});
+
+document.addEventListener('scroll', function() {
+  const tabContainer2 = document.querySelector('.tab-container2-home');
+  const tabContainer1 = document.querySelector('.tab-container1-home');
   
-    var typed = new Typed("#animatedTextContainer", options);
-  });
+  // Get the position of .tab-container1-home from the top of the document
+  const tabContainer1Position = tabContainer1.getBoundingClientRect().top + window.scrollY;
+  
+  // Check if the page has been scrolled past .tab-container1-home
+  if (window.scrollY > tabContainer1Position) {
+      tabContainer2.style.opacity = '1'; // Make tab-container2-home visible
+  } else {
+      tabContainer2.style.opacity = '0'; // Hide tab-container2-home
+  }
+});
+
+
+
+
 
 
 
