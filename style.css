@@ -97,6 +97,11 @@
 .navbar-nav .nav-link:hover{
     color: #e1820e; 
 }
+.navbar-nav .nav-link.active {
+    color: #e1820e;  
+    background-color: transparent;  
+    font-weight: bold; 
+}
 .menu ul li a {
     color: white; 
     text-decoration: none;
@@ -202,13 +207,13 @@
 }
 
 .item img {
-    height: 20px; 
+    height: 15px; 
 }
 
 /* Style for the headings */
 
 .item h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: 'MyFont2', sans-serif;
     color: white;
 }
@@ -221,8 +226,8 @@
 .content4 p{
     color: white;
     width: 50%;
-    font-size: 1rem;
-    font-family: 'MyFont2', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'MyFont', sans-serif;
 }
 .what-we-do{
     padding-top: 50px;
@@ -358,25 +363,35 @@ div.content7{
     padding-right: 75px;
 }
 
-.side-items{
+.side-items, .side-items-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 75px;
-}
-.side-items-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
     padding-right: 75px;
 }
 
-.side-items h2,.side-items-home h2{
+.side-items-home {
+    align-items: end;
+}
+
+
+.side-items h2 a, .side-items-home h2 a {
+    color: white; 
     font-size: 1.25rem;
     margin-bottom: 15px;
-    color: white;
     font-family: 'MyFont2', sans-serif;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+
+.side-items h2 a:hover, .side-items-home h2 a:hover {
+    color: black;
+}
+
+
+.side-items h2 a:hover, .side-items-home h2 a:hover {
+    cursor: pointer;
 }
 
 

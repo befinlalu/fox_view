@@ -66,6 +66,11 @@
 .navbar-nav .nav-link:hover{
     color: #e1820e; 
 }
+.navbar-nav .nav-link.active {
+    color: #e1820e;  
+    background-color: transparent;  
+    font-weight: bold; 
+}
 .navbar-toggler{
     color: transparent;
     border-color: transparent;
@@ -107,32 +112,43 @@
     height: auto;
 }
 
-.image5,.image4,.image3,.image2,.image1{
+.image5, .image4, .image3, .image2, .image1 {
     width: 200px;
     height: 500px;
     display: flex;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
-.image5{
+.image5 {
     align-items: start;
 }
-.image4{
+
+.image4 {
     align-items: end;
 }
-.image3{
+
+.image3 {
     align-items: center;
 }
-.image2{
+
+.image2 {
     align-items: start;
 }
-.image1{
+
+.image1 {
     align-items: center;
 }
 
-.image5 img,.image4 img,.image3 img,.image2 img,.image1 img{
-    max-width: 200px; 
+.image5 img, .image4 img, .image3 img, .image2 img, .image1 img {
+    max-width: 200px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
+
+.image5:hover img, .image4:hover img, .image3:hover img, .image2:hover img, .image1:hover img {
+    transform: scale(1.1);  
+    opacity: 0.8;           
+}
 .container2 {
     padding-top: 10px;
     padding-bottom: 30px;

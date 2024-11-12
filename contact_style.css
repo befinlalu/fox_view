@@ -62,9 +62,13 @@
     padding-right: 0.25rem;
 }
 
-
 .navbar-nav .nav-link:hover{
     color: #e1820e; 
+}
+.navbar-nav .nav-link.active {
+    color: #e1820e;  
+    background-color: transparent;  
+    font-weight: bold; 
 }
 .navbar-toggler{
     color: transparent;
@@ -95,7 +99,7 @@
 }
 
 .contact-form {
-    background-color: #FFD700;
+    background-color: #ffcb05;
     padding: 40px;
     width: 80%;
     text-align: center;
@@ -124,7 +128,7 @@
     width: 100%;
     border: none;
     border-bottom: 2px solid #4B0082;
-    background-color: #FFD700;
+    background-color: #ffcb05;
     padding: 8px 0;
     font-size: 16px;
     color: #000;
