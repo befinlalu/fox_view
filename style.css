@@ -481,10 +481,14 @@ div.content7{
   .footer-bottom {
     background-color: rgba(0, 0, 0, 0.2); /* Optional slight transparency for bottom section */
     color: #b3b3b3;
+    font-size: 16px;
+    font-family: 'MyFont3',sans-serif;
   }
   
   .footer a {
-    color: #ffffff; /* Ensure links are visible on a transparent background */
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "MyFont3",sans-serif;
   }
   
   .footer a:hover {
@@ -494,6 +498,23 @@ div.content7{
   .footer hr {
     background-color: #ffa500; /* Divider line color */
   }
+
+  .footerp{
+    font-size: 14px;
+    font-family: "MyFont3",sans-serif;
+  }
+  .text-uppercase{
+    font-size: 16px;
+  }
+  .footerSub{
+    font-size: 16px;
+    font-family: 'MyFont3',sans-serif;
+  }
+  .footer-icons i{
+    color: white;
+    font-size: 18px;
+  }
+
   .contain-ani{
     position: relative;
     height: max-content;
