@@ -32,9 +32,11 @@
 }
 
 .main {
-    background: url(asset/home_background.jpg) no-repeat right center;
+    background: url(asset/final.png) no-repeat right center;
     background-size: cover; 
-    min-height: 109vh;
+    min-height: 155vh;
+    background-blend-mode: hard-light;
+    
 }
 
 .container-div {
@@ -147,7 +149,7 @@
 .subTitle {
     display: flex;
     align-items: start; 
-    gap: 15px; 
+    gap: 18px; 
     padding-left: 40px;
     width: 35%;
     padding-top: 10px;
@@ -159,24 +161,21 @@
 }
 
 .subTitle p {
-    font-size: 14px; 
+    font-size: 18px; 
     color: white; 
     font-weight: 400;
 }
 
 .rest{
-    background: #2F1B52;
+    background: #2f1b52;
     padding-left: 40px;
     padding-top: 50px;
     height: auto;
     padding-right: 40px;
-    
 }
 
-
-
 .rest-text{
-    color: #472467;
+    color: #593f9d;
     font-size: 5rem;
     font-family: 'MyFont',sans-serif;
 }
@@ -213,9 +212,10 @@
 /* Style for the headings */
 
 .item h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'MyFont2', sans-serif;
     color: white;
+    line-height: 2;
 }
 
 .content4{
@@ -227,7 +227,7 @@
     color: white;
     width: 50%;
     font-size: 1.2rem;
-    font-family: 'MyFont', sans-serif;
+    line-height: 2;
 }
 .what-we-do{
     padding-top: 50px;
@@ -356,12 +356,7 @@ div.content7{
 .set-container{
     width: 60%;
 }
-.side-items{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 75px;
-}
+
 
 .side-items, .side-items-home {
     display: flex;
@@ -370,7 +365,7 @@ div.content7{
     padding-right: 75px;
 }
 
-.side-items-home {
+.side-items-home ,.side-items{
     align-items: end;
 }
 
@@ -673,7 +668,7 @@ div.content7{
         }
     }
     @media (max-width: 914px) {
-        .side-items-home{
+        .side-items-home,.side-items{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -848,15 +843,16 @@ div.content7{
         padding-left: 0;
     }
     .subheading p{
-        font-size: .6rem;
+        font-size: .7rem;
     }
-    .side-items{
+    .side-items,.side-items-home{
         padding-left: 0;
         margin-left: 35px;
     }
     .side-items h2,.side-items-home h2{
-        font-size: .7rem;
+        font-size: .8rem;
     }
+
     .main-heading img {
         height: 30px;
     }
@@ -884,7 +880,7 @@ div.content7{
     
     .rest-text-sub {
         color: white;
-        font-size: .6rem;
+        font-size: 1rem;
         font-weight: 400;
     }
     .sub-image1{
@@ -904,6 +900,9 @@ div.content7{
     }
     .sub-subheading p {
         font-size: .6;
+    }
+    .side-items h2 a, .side-items-home h2 a{
+        font-size: 1rem;
     }
    
 
