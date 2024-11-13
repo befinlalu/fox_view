@@ -181,7 +181,7 @@
 }
 .rest-text-sub{
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -212,7 +212,7 @@
 /* Style for the headings */
 
 .item h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'MyFont2', sans-serif;
     color: white;
     line-height: 2;
@@ -877,12 +877,7 @@ div.content7{
         background-size: cover; /* Adjusts the size of the image */
     }
     
-    
-    .rest-text-sub {
-        color: white;
-        font-size: 1rem;
-        font-weight: 400;
-    }
+
     .sub-image1{
         height: 100px;
     }
