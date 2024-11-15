@@ -179,7 +179,7 @@
   }
   
   .footer-bottom {
-    background-color: rgba(0, 0, 0, 0.2); /* Optional slight transparency for bottom section */
+    background-color: rgba(0, 0, 0, 0.2); 
     color: #b3b3b3;
     font-size: 16px;
     font-family: 'MyFont3',sans-serif;
@@ -189,32 +189,47 @@
     color: #ffffff;
     font-size: 14px;
     font-family: "MyFont3",sans-serif;
+    letter-spacing:1px;
   }
   
   .footer a:hover {
-    color: #ffa500; /* Highlight color on hover */
+    color: #ffa500; 
   }
   
   .footer hr {
-    background-color: #ffa500; /* Divider line color */
+    background-color: #ffa500; 
   }
 
   .footerp{
     font-size: 14px;
     font-family: "MyFont3",sans-serif;
+    letter-spacing:1px;
   }
   .text-uppercase{
     font-size: 16px;
+    letter-spacing:1px;
   }
   .footerSub{
     font-size: 16px;
     font-family: 'MyFont3',sans-serif;
-  }
-  .footer-icons i{
-    color: white;
-    font-size: 18px;
+    letter-spacing:1px;
   }
   
+  .text-center{
+    font-family: 'MyFont2',sans-serif;
+  }
+   .footer-icons i {
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-icons i:hover {
+    color: #ffa500; 
+    transform: scale(1.1); 
+  }
+  
+
   
 @media (max-width: 543px) {
     .image5,.image4,.image3,.image2,.image1{
