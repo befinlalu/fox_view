@@ -31,34 +31,16 @@
 }
 
 .main {
-    background: url(asset/final.png) no-repeat right center;
+    background: url(asset/home.png) no-repeat right center;
     background-size: cover; 
-    min-height: 155vh;
-    background-blend-mode: hard-light;
+    min-height: 175vh;
+    /* background-blend-mode: hard-light; */
+    background-color: #2F1B52;
     
 }
 
-.changed-text{
-    padding-top: 60px;
-    padding-left: 40px;
-}
 
-.container-div {
-    position: relative;
-    min-height: 90vh;
-    /* background-color: #; */
-    color: white; 
-    overflow: hidden; 
-    text-align: start;
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-    background-image: url(asset/bulb2.png);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-  }
+
   
 
 
@@ -142,7 +124,6 @@
 }
 .title h2 {
     margin: 0;
-    font-size: 4.5rem;
     font-family: 'MyFont',sans-serif;
 }
 
@@ -154,7 +135,7 @@
 .subTitle {
     display: flex;
     align-items: start; 
-    gap: 18px; 
+    gap: 2px; 
     padding-left: 40px;
     width: 35%;
     padding-top: 10px;
@@ -166,9 +147,9 @@
 }
 
 .subTitle p {
-    font-size: 18px; 
+    font-size: 20px; 
     color: white; 
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .rest{
@@ -183,6 +164,7 @@
     color: #593f9d;
     font-size: 5rem;
     font-family: 'MyFont',sans-serif;
+    margin: 0;
 }
 .rest-text-sub{
     color: white;
@@ -221,6 +203,21 @@
     font-family: 'MyFont2', sans-serif;
     color: white;
     line-height: 2;
+}
+
+.counter-table{
+    margin: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    gap: 30px;
+    
+}
+
+.text-motiv h6{
+    color: white;
+    margin: 0;
 }
 
 .content4{
@@ -316,10 +313,11 @@
 
 
 .content6{
-    padding-left: 40px;
+    padding-left: 85px;
     padding-right: 40px;
     padding-bottom: 50px;
     display: flex;
+    flex-direction: column;
 }
 .content6 h2{
     color: #593f9d;
@@ -356,6 +354,90 @@ div.content7{
     margin: 0;
     font-size: 1rem;
 }
+
+
+
+
+.individual-showcase{
+    width: 200px;
+    background-color: rebeccapurple;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 16px;
+}
+
+.individual-showcase{
+    font-size: 50px;
+  
+}
+
+.individual-showcase h5{
+    margin: 0;
+    
+}
+
+.individual-showcase p{
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.column-individual{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 103vh;
+    width: min-content;
+    background-color: transparent;
+    
+}
+
+.column-containers{
+    padding: 85px;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.section3{
+    padding: 85px;
+}
+.section4{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.content3{
+    color: black;
+    font-family: 'MyFont3';
+}
+.content3 h1{
+    font-size: 4.5rem;
+}
+
+.section5{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.section5 h2{
+    font-weight: bold;
+    font-family: 'MyFont2';
+    font-size: 4rem;
+}
+
+.section5-text-sub h3{
+    font-family: 'MyFont3';
+}
+
 
 
 .set-container{
@@ -648,8 +730,9 @@ reaction{
     color: white;
 }
 .title h2 {
+    padding-left: 50px;
     margin: 0;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: 'MyFont',sans-serif;
 }
 
@@ -660,7 +743,7 @@ reaction{
 
 .animated-line {
     margin: 0;
-    font-size: 4.5rem;
+    font-size: 2rem;
     font-family: 'MyFont',sans-serif;
     opacity: 0;
     transform: translateY(20px);
@@ -688,6 +771,9 @@ reaction{
 .animated-line:nth-child(4) {
     animation-delay: 2s;
 }
+.animated-line:nth-child(5) {
+    animation-delay: 2.5s;
+}
 
 @keyframes slideUp {
     from {
@@ -706,6 +792,7 @@ reaction{
         .main {
             background: url(asset/home_background.jpg) no-repeat right top;
             background-size: contain; 
+            background-color: #2F1B52;
         }
     }
     @media (max-width: 914px) {
@@ -737,7 +824,7 @@ reaction{
         height: 400px;
     }
     .title h2 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .item img {
         height: 18px; 
@@ -752,6 +839,7 @@ reaction{
 @media (max-width: 850px) {
     .main {
         min-height: auto;
+        background-color: #2F1B52;
     }
     .sub-image1{
         height: 300px;
@@ -777,6 +865,13 @@ reaction{
     }
     .sub-main-heading i{
         font-size: 25px;
+    }
+
+    .content3 h1{
+        font-size: 4rem;
+    }
+    .content5 h2{
+        font-size: 3rem;
     }
     
 }
@@ -813,7 +908,7 @@ reaction{
         font-size: 3.5rem;
     }
     .title h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .subTitle {
@@ -837,12 +932,13 @@ reaction{
 
 
 @media(max-width: 597px){
-    .text-motiv h2{
+    .content3 h1{
+        font-size: 3rem;
+    }
+    .content5 h2{
         font-size: 2rem;
     }
-    .content6{
-        padding-left: 0;
-    }
+   
     .main-heading img{
         height: 50px;
     }

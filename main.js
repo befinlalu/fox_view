@@ -25,7 +25,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
       document.querySelector(".subTitle").style.opacity = 1;
-  }, 2500); // Adjust this delay to match the total animation time of your lines
+  }, 3000); // Adjust this delay to match the total animation time of your lines
 });
 
 document.addEventListener('scroll', function() {
