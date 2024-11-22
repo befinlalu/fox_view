@@ -1,0 +1,676 @@
+@font-face {
+    font-family: 'MyFont';  /* Custom font name */
+    src: url('asset/fonts/swiss.ttf') format('truetype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont2';  /* Custom font name */
+    src: url('asset/fonts/ArgentumSans-Regular.otf') format('opentype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont3';  /* Custom font name */
+    src: url('asset/fonts/ArgentumSans-ExtraLight.otf') format('opentype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont4';  /* Custom font name */
+    src: url('asset/fonts/ArgentumSans-ExtraBold.otf') format('opentype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont5';  /* Custom font name */
+    src: url('asset/fonts/Montserrat-ExtraBold_0.ttf') format('opentype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyFont6';  /* Custom font name */
+    src: url('asset/fonts/Montserrat-SemiBold.ttf') format('opentype');  /* Path to .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main {
+    background: url(asset/HOME-FINAL1.jpg) no-repeat center center; 
+    background-size: cover; 
+    min-height: 180vh; 
+}
+
+.navBar {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.nav-container{
+    padding-top: 10px;
+    padding-right: 150px;
+    z-index: 1000;
+    position: relative;
+    top: 10px;
+    right: 0;
+    text-align: right;
+    align-items: end;
+}
+
+.navbar{
+    justify-content: right;
+    padding-right: 0.25rem;
+} 
+.navbar-nav{
+    display: flex;
+    gap: 10px;
+    font-family: 'MyFont2',sans-serif;
+}
+
+.navbar-nav .nav-link{
+    color: white;
+    font-size: 1rem;
+    padding-right: 0.25rem;
+}
+.navbar-nav .nav-link:hover{
+    color: #e1820e; 
+}
+.navbar-nav .nav-link.active {
+    color: #e1820e;  
+    background-color: transparent;  
+    font-weight: bold; 
+}
+.menu ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+
+
+.navbar-toggler{
+    color: transparent;
+    border-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.home_main{
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+    justify-content: space-between;
+
+}
+
+.content {
+    padding-top: 130px;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.title h2 {
+    margin: 0;
+    font-family: 'MyFont5',sans-serif;
+}
+
+
+.animated-line {
+    font-family: 'MyFont5',sans-serif;
+    margin: 0;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s ease forwards;
+    color: white;
+    padding: 0;
+    font-weight: bold;
+}
+
+.animated-line:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.animated-line:nth-of-type(2) {
+    animation-delay: .75s;
+}
+
+.animated-line:nth-of-type(3) {
+    animation-delay: 1.25s;
+}
+
+.animated-line:nth-of-type(4) {
+    animation-delay: 1.5s;
+}
+
+.animated-line:nth-of-type(5) {
+    animation-delay: 1.75s;
+}
+.animated-line:nth-of-type(6) {
+    animation-delay: 2s;
+}
+.animated-line:nth-of-type(7) {
+    animation-delay: 2.25s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.subTitle {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: start; 
+    gap: 2px; 
+    padding-left: 40px;
+    padding-top: 40px;
+    width: 50%;
+    padding-top: 10px;
+    font-size: 15px; 
+    color: white; 
+    font-family: 'MyFont6';
+    font-weight: 100;
+}
+
+.arrow {
+    width: 40px; 
+    height: auto; 
+}
+
+.counter-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.rest-text{
+    color: #593f9d;
+    font-size: 3.5rem;
+    font-family: 'MyFont5',sans-serif;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #7670b4;
+}
+
+.plus,
+.percentage {
+    color: #593f9d;
+    font-size: 3.5rem;
+    font-family: 'MyFont5',sans-serif;
+}
+
+
+
+.text-motiv {
+    text-align: center;
+    text-align: center;
+    margin: 20px;
+    color: white;
+    width: 200px;
+}
+
+.content6{
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content6 h2{
+    color: #956daf;
+    font-family: 'MyFont5', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+
+.column-containers {
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+.column-individual{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 136vh;
+    width: min-content;
+    background-color: transparent;
+    
+}
+
+
+
+.individual-showcase{
+    width: 280px;
+    height: 400px;
+    background-color: rebeccapurple;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 16px;
+}
+
+.individual-showcase{
+    font-size: 50px;
+  
+}
+
+.individual-showcase h5{
+    margin: 0;
+    font-size: 1.5rem; 
+}
+
+.individual-showcase p{
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.individual-showcase img{
+    width: 70px;
+}
+
+
+.individual-showcase {
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.individual-showcase:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  /
+}
+
+
+.individual-showcase:active {
+    transform: scale(1.5);  
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);  
+}
+
+.brand-identity {
+    background-color: #b84d9d;
+}
+
+.web-digital {
+    background-color: #956daf;
+}
+
+.print-design {
+    background-color: #6a54a8;
+}
+
+.promotional {
+    background-color: #8298cd;
+}
+
+.marketing {
+    background-color: #faa61a;
+}
+
+.social {
+    background-color: #d9ad21;
+}
+
+
+.content3{
+    color: black;
+    font-family: 'MyFont3';
+    padding-left: 80px;
+}
+.content3 h1{
+    font-size: 4.5rem;
+}
+
+.content3 h4{
+    font-size: 1.5rem;
+}
+.hr {
+    border: none;                 
+    border-top: 5px solid black;  
+    margin: 20px 0;
+    margin-left: 80px;              
+    margin-right: 80px;            
+  }
+  
+video {
+    display: block;                
+    padding-left: 80px;
+    padding-right: 80px;
+    height: auto;                
+  }
+
+.section5{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.section5 h2{
+    font-weight: bold;
+    font-family: 'MyFont2';
+    font-size: 3.5rem;
+}
+
+.section5-text-sub h3{
+    font-family: 'MyFont3';
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-xl, .container-xxl{
+    max-width: 100%;
+}
+.footer {
+     background-color: #2F1B52; 
+     color: #ffffff; 
+     font-family: 'MyFont2',sans-serif;
+ 
+}
+.logo-img-footer{
+     width: 150px;
+}
+   
+.footer-bottom {
+     background-color: rgba(0, 0, 0, 0.2); /* Optional slight transparency for bottom section */
+     color: #b3b3b3;
+     font-size: 16px;
+     font-family: 'MyFont3',sans-serif;
+}
+   
+.footer a {
+     color: #ffffff;
+     font-size: 14px;
+     font-family: "MyFont3",sans-serif;
+     letter-spacing:1px;
+}
+   
+   .footer a:hover {
+     color: #ffa500; /* Highlight color on hover */
+}
+   
+   .footer hr {
+     background-color: #ffa500; /* Divider line color */
+}
+ 
+.footerp{
+     font-size: 14px;
+     font-family: "MyFont3",sans-serif;
+     letter-spacing:1px;
+}
+.text-uppercase{
+     font-size: 16px;
+     letter-spacing:1px;
+}
+.footerSub{
+     font-size: 16px;
+     font-family: 'MyFont3',sans-serif;
+     letter-spacing:1px;
+}
+.footer-icons i {
+     color: white;
+     font-size: 18px;
+     transition: all 0.3s ease;
+}
+   
+.footer-icons i:hover {
+     color: #ffa500; 
+     transform: scale(1.1); 
+}
+   
+@media  (max-width: 1254px){
+    .animated-line{
+        font-size: 1.8rem;
+    }
+    .subTitle {
+        font-size: 14px;
+    }
+    .section5 h2{
+    font-size: 3rem;
+    }
+}
+@media(max-width: 1106px){
+
+    .content3 h1{
+        font-size: 3.5rem;
+    }
+    .content3 h4{
+        font-size: 1.2rem;
+    }
+    .section5 h2{
+        font-size: 2.6rem;
+    }
+    .section5-text-sub h3{
+        font-family: 'MyFont3';
+        font-size: 1.6rem;
+    }
+    
+    
+}
+@media (max-width: 991px) {
+    .nav-container{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+    .logo-img {
+        height: 90px;
+        padding-left: 20px;
+        padding-top: 25px;
+    }  
+    .animated-line{
+        font-size: 1.6rem;
+    }
+    .subTitle {
+        font-size: 12px;
+    }
+    .content6 h2{
+        font-size: 2rem;
+    }
+
+    .content3 h1{
+        font-size: 3rem;
+    }
+
+    .content3 h4{
+        font-size: 1rem;
+    }
+
+    .section5 h2{
+        font-size: 2.4rem;
+    }
+    .section5-text-sub h3{
+        font-family: 'MyFont3';
+        font-size: 1.3rem;
+    }
+    
+
+}
+
+@media (max-width: 760px) {
+    .animated-line{
+        font-size: 1.3rem;
+    }
+    .subTitle {
+        font-size: 12px;
+    }
+    .content3 h1{
+        font-size: 2.5rem;
+    }
+    .content3 h4{
+        font-size: .8rem;
+    }
+    .section5 h2{
+        font-size: 2rem;
+    }
+    .section5-text-sub h3{
+        font-family: 'MyFont3';
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 684px) {
+    .nav-container{
+        display: flex;
+        align-items: flex-end;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+    .logo-img {
+        height: 80px;
+        padding-left: 20px;
+        padding-top: 25px;
+    }
+    .arrow{
+        width: 20px; 
+        height: auto; 
+    }
+    .counter-table{
+        padding-left: 0px;
+    }
+    .content{
+        padding-left: 45px;
+    }
+    .animated-line{
+        font-size: 1.2rem;
+    }
+    .subTitle {
+        font-size: 10px;
+        padding-left: 25px;
+    }
+    .content6{
+        padding-left: 45px;
+        font-size: 1rem;
+    }
+    .column-containers{
+        padding-left: 45px;
+    }
+    .content3{
+        padding-left: 45px;
+    }
+    .content3 h1{
+        font-size: 1.8rem;
+    }
+    .hr {
+
+        margin-left: 45px;              
+        margin-right: 45px;            
+      }
+      video {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      .section5{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .section5 h2{
+        font-size: 1.5rem;
+    }
+    .section5-text-sub h3{
+        font-family: 'MyFont3';
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width: 647px){
+
+    .column-individual{
+        justify-content: start;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 597px){
+    .animated-line{
+        font-size: 1rem;
+    }
+    .subTitle {
+        font-size: 10px;
+    }
+    .content3 h1{
+        font-size: 1.5rem;
+    }
+
+    .section5 h2{
+        font-size: 1.25rem;
+    }
+    .section5-text-sub h3{
+        font-family: 'MyFont3';
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 492px){
+
+    .subTitle {
+        font-size: 9px;
+    }
+}
