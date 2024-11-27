@@ -43,9 +43,7 @@
 }
 
 .main {
-    background: url(asset/HOME-FINAL1.jpg) no-repeat center center; 
-    background-size: cover; 
-    min-height: 180vh; 
+    background-color:  #000000;
 }
 
 .navBar {
@@ -126,12 +124,13 @@
     display: flex;
     justify-content: start;
     align-items: center; 
-    padding-left: 80px;
+    padding-left: 40px;
     padding-right: 80px;
 }
 
 .title h2 {
     margin: 0;
+    font-size: 3.1rem;
     font-family: 'MyFont5',sans-serif;
 }
 
@@ -139,13 +138,15 @@
 .animated-line {
     font-family: 'MyFont5',sans-serif;
     margin: 0;
-    font-size: 2rem;
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 0.5s ease forwards;
     color: white;
     padding: 0;
     font-weight: bold;
+}
+.animated-line1{
+    color: #f68b1f;
 }
 
 .animated-line:nth-of-type(1) {
@@ -185,6 +186,15 @@
     }
 }
 
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .subTitle {
     opacity: 0;
@@ -192,20 +202,57 @@
     display: flex;
     align-items: start; 
     gap: 2px; 
-    padding-left: 40px;
     padding-top: 40px;
-    width: 50%;
-    padding-top: 10px;
-    font-size: 15px; 
+    font-size: 18px; 
     color: white; 
-    font-family: 'MyFont6';
-    font-weight: 100;
+    font-family: 'MyFont3';
+    letter-spacing: 1px;
+    font-weight: 50;
 }
 
 .arrow {
-    width: 40px; 
+    width: 60px; 
     height: auto; 
 }
+
+.slider-container {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #007bff; /* Active color */
+  }
 
 .counter-table {
     display: flex;
@@ -217,18 +264,17 @@
 
 
 .rest-text{
-    color: #593f9d;
     font-size: 3.5rem;
     font-family: 'MyFont5',sans-serif;
     margin: 0;
     font-size: 3.5rem;
     font-weight: bold;
-    color: #7670b4;
+    color: grey;
 }
 
 .plus,
 .percentage {
-    color: #593f9d;
+    color:grey;
     font-size: 3.5rem;
     font-family: 'MyFont5',sans-serif;
 }
@@ -260,12 +306,13 @@
 
 .column-containers {
     padding: 80px;
+    padding-left: 80px;
     display: flex;
     flex-direction: row;
     width: fit-content;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 70px;
 }
 
 
@@ -273,7 +320,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    height: 950px;
+    height:810px;
     width: min-content;
     background-color: transparent;
     
@@ -282,8 +329,8 @@
 
 
 .individual-showcase{
-    width: 280px;
-    height: 400px;
+    width: 220px;
+    height: 320px;
     background-color: rebeccapurple;
     align-items: center;
     justify-content: center;
@@ -309,7 +356,7 @@
 
 .individual-showcase p{
     padding-top: 10px;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
 }
 .individual-showcase img{
@@ -324,7 +371,7 @@
 
 .individual-showcase:hover {
     transform: scale(1.05);  
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  /
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  
 }
 
 
@@ -356,19 +403,33 @@
 .social {
     background-color: #d9ad21;
 }
+.packaging-design{
+    background-color: #00accd;
+}
+.illustration{
+    background-color: #46c1be;
+}
+
 
 
 .content3{
     color: black;
     font-family: 'MyFont3';
-    padding-left: 80px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 .content3 h1{
     font-size: 4.5rem;
+    line-height:1;
+    padding-left: 20px;
+    padding-right: 80px;
 }
 
 .content3 h4{
+    padding-right:80px;
+    padding-top:40px;
     font-size: 1.5rem;
+    padding-left: 20px;
 }
 .hr {
     border: none;                 
@@ -393,43 +454,26 @@ video {
 .section5 h2{
     font-weight: bold;
     font-family: 'MyFont2';
-    font-size: 3.5rem;
+    font-size: 4rem;
+    line-height: 65px;
 }
 
 .section5-text-sub h3{
     font-family: 'MyFont3';
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .container, .container-fluid, .container-lg, .container-md, .container-xl, .container-xxl{
     max-width: 100%;
 }
 .footer {
-     background-color: #2F1B52; 
+     background-color: #000000; 
      color: #ffffff; 
      font-family: 'MyFont2',sans-serif;
+     line-height: 1;
  
 }
 .logo-img-footer{
@@ -462,6 +506,7 @@ video {
      font-size: 14px;
      font-family: "MyFont3",sans-serif;
      letter-spacing:1px;
+     line-height: 1.3;
 }
 .text-uppercase{
      font-size: 16px;
@@ -483,17 +528,75 @@ video {
      transform: scale(1.1); 
 }
    
-@media  (max-width: 1254px){
+@media  (max-width: 1024px){
+    .slider-container {
+        max-width: 450px;
+        max-height: 450px;
+
+      }
     .animated-line{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
     .subTitle {
-        font-size: 14px;
+        font-size: 10px;
     }
     .section5 h2{
     font-size: 3rem;
     }
-}
+        .title h2{
+            font-size: 2rem;
+        }
+        .subTitle {
+            font-size: 15px;
+            width: 100%;
+        }
+        .container1{
+            padding-left: 40px;
+        padding-right: 40px;
+        }
+        .arrow{
+            width: 50px;
+        }
+    
+        .content{
+            padding-left: 40px;
+            font-size: 3rem;
+        }
+        
+        .content6 {
+            padding-left: 20px;
+            
+        }
+        .content6 h2{
+            font-size: 3rem;
+        }
+        
+        .content3 h1{
+            padding-left: 10px;
+            font-size: 3.5rem;
+        }
+        .content3 h4{
+            padding-left: 10px;
+            padding-top: 30px;
+            font-size: 2.5rem;
+            padding-bottom: 30px;
+        }
+        .section5{
+            padding-left: 40px;
+            line-height:20px
+        }
+        .section5 h2{
+            font-size: 3.5rem;
+            padding-left: 40px;
+        }
+        .section5-text-sub h3{
+            font-size: 2.5rem;
+            padding-top: 30px;
+            padding-left: 40px;
+            padding-bottom: 60px;
+        }
+    }
+
 @media(max-width: 1106px){
 
     .content3 h1{
@@ -504,6 +607,7 @@ video {
     }
     .section5 h2{
         font-size: 2.6rem;
+        line-height: 10px;
     }
     .section5-text-sub h3{
         font-family: 'MyFont3';
@@ -513,6 +617,11 @@ video {
     
 }
 @media (max-width: 991px) {
+    .slider-container {
+        max-width: 400px;
+        max-height: 400px;
+
+      }
     .nav-container{
         display: flex;
         align-items: flex-end;
@@ -524,7 +633,7 @@ video {
         padding-left: 20px;
         padding-top: 25px;
     }  
-    .animated-line{
+    .line{
         font-size: 1.6rem;
     }
     .subTitle {
@@ -544,6 +653,7 @@ video {
 
     .section5 h2{
         font-size: 2.4rem;
+        line-height: 15px;
     }
     .section5-text-sub h3{
         font-family: 'MyFont3';
@@ -555,7 +665,7 @@ video {
 
 @media (max-width: 760px) {
     .animated-line{
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .subTitle {
         font-size: 12px;
@@ -568,11 +678,17 @@ video {
     }
     .section5 h2{
         font-size: 2rem;
+        line-height:20px;
     }
     .section5-text-sub h3{
         font-family: 'MyFont3';
         font-size: 1.1rem;
     }
+    .slider-container {
+        max-width: 350px;
+        max-height: 350px;
+
+      }
 }
 
 @media (max-width: 684px) {
@@ -598,11 +714,15 @@ video {
         padding-left: 45px;
     }
     .animated-line{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .subTitle {
         font-size: 10px;
+        
+    }
+    .container1{
         padding-left: 25px;
+        padding-right: 25px;
     }
     .content6{
         padding-left: 45px;
@@ -629,6 +749,7 @@ video {
       .section5{
         padding-left: 45px;
         padding-right: 45px;
+        line-height: 20px;
     }
     .section5 h2{
         font-size: 1.5rem;
@@ -640,7 +761,7 @@ video {
 }
 
 
-@media(max-width: 745px){
+@media(max-width: 647px){
 
     .column-individual{
         justify-content: start;
@@ -650,17 +771,21 @@ video {
 
 @media(max-width: 597px){
     .animated-line{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .subTitle {
         font-size: 10px;
     }
     .content3 h1{
+        padding-left: 10px;
+        padding-right: 0;
         font-size: 1.5rem;
+        line-height: 1;
     }
 
     .section5 h2{
         font-size: 1.25rem;
+        line-height: 15px;
     }
     .section5-text-sub h3{
         font-family: 'MyFont3';
@@ -668,9 +793,78 @@ video {
     }
 }
 
-@media(max-width: 492px){
+@media(max-width: 480px){
 
     .subTitle {
-        font-size: 9px;
+        font-size: 12px;
+        width: 100%;
+        
+
     }
+    .container1{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .arrow{
+        width: 40px;
+    }
+    .counter-table{
+        padding-left: 50px;
+        
+    }
+    .column-individual{
+        padding-left: 40px;
+    }
+    .content{
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .title h2{
+        font-size: 1.5rem;
+    }
+    .content6 {
+        padding-left: 45px;
+        padding-right: 2px;
+    }
+    .content6 h2{
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+    .column-containers{
+        padding: 50px;
+    }
+    .content3 h1{
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+    .content3 h4{
+        padding-left: 5px;
+        padding-top: 10px;
+        font-size: .8rem;
+        line-height: 1.5;
+        padding-right: 30px;
+    }
+    .section5{
+        padding-left: 10px;
+    }
+    .section5 h2{
+        font-size: 1rem;
+        line-height:1;
+    }
+    .section5-text-sub h3{
+        padding-right: 10px;
+        font-size: .8rem;
+        padding-top: 10px;
+        line-height:1;
+        padding-bottom: 35px;
+    }
+    .footer{
+        line-height: 1;
+    }
+    .footerp{
+        line-height: 1.5;
+    }
+
 }
